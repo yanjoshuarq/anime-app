@@ -2,8 +2,7 @@
 .mheader {
      background: #222;
      border-bottom: solid 1px #1e1e1e;
-     overflow: hidden;
-     padding: -15px; }
+     overflow: hidden; }
      .mwidth-flex {
          max-width: 1280px;
          justify-content: space-between;
@@ -16,7 +15,8 @@
      background-position: 0 0;
      display: inline-block;
          width: 100px;
-         height: 42px; }
+         height: 42px;
+        margin-bottom: -10px; }
          .spr-menu img {
              position: fixed;
              left: 3px;
