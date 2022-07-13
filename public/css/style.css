@@ -2,26 +2,43 @@
 .mheader {
      background: #222;
      border-bottom: solid 1px #1e1e1e;
-     overflow: hidden;
-     padding: -15px; }
+     overflow: hidden; }
      .mwidth-flex {
          max-width: 1280px;
          justify-content: space-between;
          align-items: center;
          display: flex;
          margin: auto; }
+         .mladder {
+             background: #1a1a1a;
+             border-bottom: solid 1px #1e1e1e;
+             overflow: hidden; }
+             .nodemon {
+                 max-width: 1280px;
+                 justify-content: space-between;
+                 align-items: center;
+                 display: flex;
+                 padding: 3px;
+                 margin: auto; }
+                     .nodemon h1 {
+                         text-transform: capitalize;
+                         font-weight: 300;
+                         font-size: 13px;
+                         color: #fff; }
 ::-webkit-scrollbar { display: none; }
 .spr-menu {
-     margin-right: 10px;
-     background-position: 0 0;
-     display: inline-block;
-         width: 100px;
-         height: 42px; }
-         .spr-menu img {
-             position: fixed;
-             left: 3px;
-             width: 35px;
-             height: 35px; }
+    margin-right: 10px;
+    background-position: 0 0;
+    display: inline-block;
+        width: 100px;
+        height: 42px;
+       margin-bottom: -18px; }
+        .spr-menu img {
+            position: fixed;
+            left: 3px;
+            top: 2px;
+            width: 35px;
+            height: 35px; }
 .flickity-slider {
      display: flex; }
      .items {
@@ -42,10 +59,3 @@
                  font-size: 11px;
                  font-weight: bolder;
                  padding: 5px; }
-.flickity-slider h2 {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 300;
-    margin: 5px;
-    font-size: 22px;
-}
