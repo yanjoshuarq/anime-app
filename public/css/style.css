@@ -26,13 +26,6 @@
                          font-weight: 300;
                          font-size: 13px;
                          color: #fff; }
-                         .nodemon h2 {
-                             text-transform: capitalize;
-                             margin-left: -5px;
-                             font-weight: 300;
-                             font-size: 13px;
-                             color: #1a1a1a; 
-                         }
 ::-webkit-scrollbar { display: none; }
 .spr-menu {
      margin-right: 10px;
