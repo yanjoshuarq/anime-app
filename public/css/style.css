@@ -79,3 +79,9 @@
                  font-size: 11px;
                  font-weight: bolder;
                  padding: 5px; }
+.logger {
+    display: flex;
+    height: 441px; }
+    .mlogger {
+        background: #111;
+        height: 5000px; }
