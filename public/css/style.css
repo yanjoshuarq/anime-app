@@ -80,8 +80,49 @@
                  font-weight: bolder;
                  padding: 5px; }
 .logger {
-    display: flex;
-    height: 441px; }
+     display: flex; }
     .mlogger {
-        background: #111;
-        height: 5000px; }
+         background: #111;
+         height: 222px; }
+         .gallery {
+            --z: 32px;
+            --s: 360px;
+            --g: 1px;
+            display: grid;
+            gap: var(--g);
+            width: calc(2*var(--s) + var(--g));
+            grid-auto-flow: column; }
+          .gallery > img {
+            width: 0;
+            min-width: calc(100% + var(--z)/2);
+            height: var(--s);
+            object-fit: cover;
+            -webkit-mask: var(--mask);
+                    mask: var(--mask);
+            cursor: pointer;
+            transition: .5s; }
+          .gallery > img:hover {
+            width: calc(var(--s)/2); }
+          .gallery > img:first-child {
+            place-self: start;
+            clip-path: polygon(calc(0*var(--z)) 0,100% 0,100% 100%,0 100%);
+            --mask: 
+              linear-gradient(#000 0 0) left/calc(100% - var(--z)) 100% no-repeat,
+              conic-gradient(from -135deg at right,#0000,#000 1deg 89deg,#0000 90deg) 
+                100% 50%/var(--z) calc(2*var(--z)) repeat-y; }
+          .gallery > img:last-child {
+            place-self: end;
+            clip-path: polygon(0 0,100% 0,calc(100% - 1*var(--z)) 100%,0 100%);
+            --mask: 
+              linear-gradient(#000 0 0) right/calc(100% - var(--z)) 100% no-repeat,
+              conic-gradient(from   45deg at left ,#0000,#000 1deg 89deg,#0000 90deg) 
+                 0% calc(50% + var(--z)) /var(--z) calc(2*var(--z)) repeat-y; }
+                 .snap h1 {
+                     color: #fff;
+                     text-decoration: none;
+                     font-weight: 400;
+                     font-size: 12px;
+                     margin: 5px;
+                     margin-left: 10px; }
+                     .kladder {
+                      display: flex; }
